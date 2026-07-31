@@ -1,0 +1,14 @@
+\documentclass[twocolumn]{article}
+\usepackage{amsfonts,natbib,balance,enumitem,hyperref,cleveref}
+\begin{document}
+\section{Reference fixture}\label{sec:fixture}
+The cached compiler resolves \cref{sec:fixture} and supports a
+parenthetical citation~\citep{fixture}.
+\begin{itemize}[nosep]
+\item Compact list fixture.
+\end{itemize}
+\balance
+\begin{thebibliography}{1}
+\bibitem[Fixture(2026)]{fixture} Synthetic compiler fixture, 2026.
+\end{thebibliography}
+\end{document}

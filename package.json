@@ -1,0 +1,52 @@
+{
+  "name": "scholar-flow",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "vinext dev",
+    "build": "vinext build",
+    "start": "node scripts/start.mjs",
+    "start:web": "vinext start",
+    "test": "node --test compiler/tests/*.test.mjs",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "typecheck": "tsc --noEmit",
+    "provider:audit": "node scripts/provider-audit.mjs",
+    "pdf:setup": "node compiler/setup.mjs",
+    "pdf:server": "node scripts/pdf-server.mjs",
+    "ollama:setup": "node scripts/ollama-setup.mjs",
+    "ollama:check": "node scripts/ollama-check.mjs",
+    "llama:serve": "node scripts/llama-serve.mjs",
+    "provider:oci": "node scripts/select-oci-provider.mjs",
+    "provider:local": "node scripts/offline-setup.mjs",
+    "offline:setup": "node scripts/offline-setup.mjs"
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "unpdf": "1.6.2"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.37.1",
+    "@cloudflare/workers-types": "4.20260515.1",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitejs/plugin-rsc": "0.5.26",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "react-server-dom-webpack": "19.2.6",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3",
+    "vinext": "0.0.50",
+    "vite": "8.0.13",
+    "wrangler": "4.92.0"
+  },
+  "type": "module"
+}
